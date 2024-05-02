@@ -1,0 +1,18 @@
+# Ignore everything
+/*
+
+# Include these directories and files
+!.gitignore
+!.ignore
+!.config/
+!.bashrc
+!.profile
+!.gitconfig
+!.hushlogin
+
+!README.md
+!scripts/
+
+# Continue exlucding these files/directories
+.config/go/*
+.config/tmux/plugins/*
