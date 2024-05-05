@@ -98,6 +98,9 @@ alias neovim='cd ~/.config/nvim/'
 alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 alias sd="cd ~ && cd \$(fdfind -t d -I --ignore-file ~/.ignore | fzf)"
 
+alias shutdown='wsl.exe --terminate $WSL_DISTRO_NAME'
+alias reboot='cd /mnt/c/ && cmd.exe /c start "rebooting WSL" cmd /c "timeout 5 && wsl -d $WSL_DISTRO_NAME" && wsl.exe --terminate $WSL_DISTRO_NAME'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
