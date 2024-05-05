@@ -8,7 +8,7 @@ return {
       'hrsh7th/cmp-cmdline',
 
       -- Useful status updates for LSP.
-      -- { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim', tag = "v1.4.0", opts = { notification = { window = { winblend = 0 } } } },
 
       -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
       -- used for completion, annotations and signatures of Neovim apis
