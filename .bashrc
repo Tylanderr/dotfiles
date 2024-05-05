@@ -143,3 +143,4 @@ if [ -d "$HOME/.bashrc.d" ]; then
     done
 fi
 
+eval "$(starship init bash)"
