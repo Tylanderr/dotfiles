@@ -41,6 +41,10 @@
 
 - sudo apt install fzf
 
+# Install Starship
+
+- curl -sS https://starship.rs/install.sh | sh
+
 # Lua files
 
 - create directory ~/.config/nvim
