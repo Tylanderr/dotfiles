@@ -97,6 +97,7 @@ alias vim='nvim'
 alias neovim='cd ~/.config/nvim/'
 alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 alias sd="cd ~ && cd \$(fdfind -t d -I --ignore-file ~/.ignore | fzf)"
+alias ld="cd \$(fdfind -t d -I | fzf)"
 
 alias shutdown='wsl.exe --shutdown'
 
