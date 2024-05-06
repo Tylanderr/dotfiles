@@ -41,7 +41,6 @@ vim.keymap.set('n', '<C-s>', function()
 end)
 
 vim.keymap.set('v', 'Y', [[:w !clip.exe]])
-vim.keymap.set('n', '<leader>sp', [[:r !sh ~/scripts/paste.sh<CR>]])
 
 vim.keymap.set('n', '<leader>nh', '<cmd>noh<CR>')
 
