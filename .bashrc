@@ -91,7 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias li='ls -l'
+alias ls='ls -l'
 
 alias vim='nvim'
 alias neovim='cd ~/.config/nvim/'
