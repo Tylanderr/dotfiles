@@ -39,7 +39,9 @@ require('lazy').setup({
 
   require 'tyler/plugins/refactoring',
 
-  require 'tyler/plugins/trouble'
+  require 'tyler/plugins/trouble',
+
+  require 'tyler/plugins/noice'
 })
 
 require('lspconfig').jdtls.setup {}
