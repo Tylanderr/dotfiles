@@ -22,5 +22,6 @@ return {
     --   If not available, we use `mini` as the fallback
     "rcarriga/nvim-notify",
   },
-  vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
+  vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" }),
+  vim.keymap.set("n", "<leader>nt", "<cmd>Noice telescope<CR>", { desc = "Show noice messages in telescope" })
 }
