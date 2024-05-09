@@ -1,9 +1,3 @@
---  To check the current status of your plugins, run
---    :Lazy
---
---  To update plugins you can run
---    :Lazy update
---
 require('lazy').setup({
   'tpope/vim-sleuth',
 
@@ -27,9 +21,6 @@ require('lazy').setup({
   require 'tyler/plugins/trouble',
   require 'tyler/plugins/noice',
   require 'tyler/plugins/lazygit',
-  require 'tyler/plugins/oil',
   require 'tyler/plugins/lualine',
   require 'tyler/plugins/java',
 })
-
-require('lspconfig').jdtls.setup {}

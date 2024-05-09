@@ -1,6 +1,6 @@
 return {
   'nvim-java/nvim-java',
-  lazy = true,
+  ft = "java",
   dependencies = {
     'nvim-java/lua-async-await',
     'nvim-java/nvim-java-core',
@@ -22,5 +22,6 @@ return {
   },
   config = function()
     require('java').setup()
+    require('lspconfig').jdtls.setup({})
   end,
 }
