@@ -22,5 +22,6 @@ require('lazy').setup({
   require 'tyler/plugins/noice',
   require 'tyler/plugins/lazygit',
   require 'tyler/plugins/lualine',
+  require 'tyler/plugins/oil',
   require 'tyler/plugins/java',
 })
