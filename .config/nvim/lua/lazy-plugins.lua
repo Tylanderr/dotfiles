@@ -13,7 +13,6 @@ require('lazy').setup({
   --    require('Comment').setup({})
   { 'numToStr/Comment.nvim', opts = {} },
   require 'tyler/plugins/telescope',
-  require 'tyler/plugins/java',
   require 'tyler/plugins/lspconfig',
   require 'tyler/plugins/cmp',
   require 'tyler/plugins/tokyonight',
@@ -29,7 +28,8 @@ require('lazy').setup({
   require 'tyler/plugins/noice',
   require 'tyler/plugins/lazygit',
   require 'tyler/plugins/oil',
-  require 'tyler/plugins/lualine'
+  require 'tyler/plugins/lualine',
+  require 'tyler/plugins/java',
 })
 
 require('lspconfig').jdtls.setup {}
