@@ -19,8 +19,6 @@
 - sudo apt-get install ripgrep
 - sudo apt install fd-find
 - sudo apt install fzf
-# Install Starship
-- curl -sS https://starship.rs/install.sh | sh
 # Lua files
 - create directory ~/.config/nvim
 - Move lua files into this directory
@@ -29,3 +27,12 @@
 - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - Place tmux.conf in .config/tmux/
     - prefix+I to install
+# Install Starship
+- curl -sS https://starship.rs/install.sh | sh
+# Install Lazygit
+"""LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit /usr/local/bin
+"""
+
