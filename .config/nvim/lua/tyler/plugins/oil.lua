@@ -3,7 +3,7 @@ return {
   opts = {
     default_file_explorer = true,
     view_options = {
-      show_hidden = true
+      show_hidden = false
     }
   },
   vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
