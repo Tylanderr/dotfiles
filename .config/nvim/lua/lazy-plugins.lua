@@ -28,7 +28,8 @@ require('lazy').setup({
   require 'tyler/plugins/trouble',
   require 'tyler/plugins/noice',
   require 'tyler/plugins/lazygit',
-  require 'tyler/plugins/oil'
+  require 'tyler/plugins/oil',
+  require 'tyler/plugins/lualine'
 })
 
 require('lspconfig').jdtls.setup {}
