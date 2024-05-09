@@ -35,15 +35,9 @@ vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true })
 
-vim.keymap.set({'n', 'i'}, '<C-s>', function()
-  vim.cmd 'w'
-end)
-
+vim.keymap.set({'n', 'i'}, '<C-s>', "<cmd>w<CR>")
 vim.keymap.set('n', '<leader>nh', '<cmd>noh<CR>')
-
-vim.keymap.set('n', '<leader>wv', function()
-  vim.cmd 'vsplit'
-end)
+vim.keymap.set('n', '<leader>wv', "<cmd>vsplit<CR>")
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
