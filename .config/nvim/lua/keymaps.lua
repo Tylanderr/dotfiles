@@ -39,8 +39,6 @@ vim.keymap.set({'n', 'i'}, '<C-s>', function()
   vim.cmd 'w'
 end)
 
-vim.keymap.set('v', 'Y', [[:w !clip.exe]])
-
 vim.keymap.set('n', '<leader>nh', '<cmd>noh<CR>')
 
 vim.keymap.set('n', '<leader>wv', function()
