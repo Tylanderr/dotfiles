@@ -35,3 +35,4 @@
 - tar xf lazygit.tar.gz lazygit
 - sudo install lazygit /usr/local/bin
 
+This is a test
