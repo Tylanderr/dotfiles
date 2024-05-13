@@ -99,6 +99,7 @@ alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 alias sd="cd ~ && cd \$(fdfind -t d -I --ignore-file ~/.ignore | fzf)"
 alias ld="cd \$(fdfind -t d -I -H | fzf)"
 alias lg="lazygit"
+alias cl="clear"
 
 alias shutdown='wsl.exe --shutdown'
 
