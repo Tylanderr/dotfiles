@@ -1,3 +1,8 @@
+# Dotfiles TODO
+- Write shell script to install all required tools to get repo up and running
+- Check out ansible vault
+- Possibly look into stow?
+
 # Setup neovim
 # Remember to run
 - sudo apt-get update
