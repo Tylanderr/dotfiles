@@ -22,7 +22,6 @@
 - create a symlink "ln -s ./nvim-linux64/bin/nvim ./nvim"
 # Install CLI Tools
 - sudo apt-get install ripgrep
-- sudo apt install fd-find
 - sudo apt install fzf
 # Lua files
 - create directory ~/.config/nvim

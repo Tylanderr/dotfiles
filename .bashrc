@@ -103,7 +103,7 @@ alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 
 # Fuzzy finding navigation
 alias sd="cd \$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)"
-alias ed="cd \$(fdfind -t d -I -H | fzf)"
+alias ed="cd \$(find * -type d | fzf)"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
