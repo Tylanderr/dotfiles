@@ -87,21 +87,23 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias ls='ls -l'
+# Alias'
+alias ll='eza -alF'
+alias ls='eza -l'
+alias cl="clear"
+alias shutdown='wsl.exe --shutdown'
+alias lg="lazygit"
 
+# Neovim
 alias vim='nvim'
 alias neovim='cd ~/.config/nvim/'
+
+# Startup dev tmux session
 alias dev='sh /home/tyler/scripts/tmux-startup.sh'
+
+# Fuzzy finding navigation
 alias sd="cd \$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)"
 alias ed="cd \$(fdfind -t d -I -H | fzf)"
-alias lg="lazygit"
-alias cl="clear"
-
-alias shutdown='wsl.exe --shutdown'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
