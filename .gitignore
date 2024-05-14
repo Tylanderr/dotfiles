@@ -3,7 +3,6 @@
 
 # Include these directories and files
 !.gitignore
-!.ignore
 !.config/
 !.bashrc
 !.profile
