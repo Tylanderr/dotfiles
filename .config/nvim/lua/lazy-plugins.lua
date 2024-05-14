@@ -25,4 +25,5 @@ require('lazy').setup({
   require 'tyler/plugins/oil',
   require 'tyler/plugins/java',
   require 'tyler/plugins/obsidian',
+  require 'tyler/plugins/nonels',
 })
