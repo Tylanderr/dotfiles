@@ -96,9 +96,8 @@ alias ls='ls -l'
 alias vim='nvim'
 alias neovim='cd ~/.config/nvim/'
 alias dev='sh /home/tyler/scripts/tmux-startup.sh'
-alias sd="cd ~ && cd \$(fdfind -t d -I --min-depth 2 --max-depth 2 --ignore-file ~/.ignore | fzf)"
-alias sdm="cd ~ && cd \$(fdfind -t d -I --ignore-file ~/.ignore | fzf)"
-alias ld="cd \$(fdfind -t d -I -H | fzf)"
+alias sd="cd \$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)"
+alias ed="cd \$(fdfind -t d -I -H | fzf)"
 alias lg="lazygit"
 alias cl="clear"
 
