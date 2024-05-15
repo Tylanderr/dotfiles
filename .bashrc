@@ -102,8 +102,21 @@ alias neovim='cd ~/.config/nvim/'
 alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 
 # Fuzzy finding navigation
-alias sd="cd \$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)"
-alias ed="cd \$(find * -type d | fzf)"
+function sd {
+    selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)
+    echo $selected
+    if  [[ $selected ]]; then
+	cd $selected
+    fi
+}
+
+function ed {
+    selected=$(find * -type d | fzf)
+    echo $selected
+    if  [[ $selected ]]; then
+	cd $selected
+    fi
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
