@@ -104,7 +104,6 @@ alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 # Fuzzy finding navigation
 function sd {
     selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)
-    echo $selected
     if  [[ $selected ]]; then
 	cd $selected
     fi
@@ -112,7 +111,6 @@ function sd {
 
 function ed {
     selected=$(find * -type d | fzf)
-    echo $selected
     if  [[ $selected ]]; then
 	cd $selected
     fi
