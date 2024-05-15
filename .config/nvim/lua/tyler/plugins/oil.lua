@@ -8,14 +8,8 @@ return {
 			},
 			keymaps = {
 				-- overwrite default keymaps with custom functions
-				["<C-s>"] = "<cmd>w<cr>",
-				["<C-h>"] = {
-					function()
-						local harpoon = require("harpoon")
-						harpoon:setup()
-						harpoon:list():select(1)
-					end,
-				},
+				["<C-s>"] = false,
+				["<C-h>"] = false,
 			},
 		})
 		vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Open parent directory" })
