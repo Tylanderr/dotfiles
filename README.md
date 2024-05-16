@@ -17,7 +17,7 @@
 - Create symlinks to the node things that nvm installed
     - sudo ln -s $(realpath `which npm`) /usr/local/bin/npm
     - sudo ln -s `which node` /usr/local/bin/node
-    - sudo ln -s `which tsc' /usr/local/bin/tsc
+    - sudo ln -s `which tsc` /usr/local/bin/tsc
 - sudo apt install npm
 - sudo apt install python3
 # Download neovim tarball
