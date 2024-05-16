@@ -87,12 +87,13 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Alias'
+# Alias
 alias ll='eza -alF'
 alias ls='eza -l'
 alias cl="clear"
 alias shutdown='wsl.exe --shutdown'
 alias lg="lazygit"
+alias proj="cd ~/projects"
 
 # Neovim
 alias vim='nvim'
