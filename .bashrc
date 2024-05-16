@@ -101,6 +101,10 @@ alias neovim='cd ~/.config/nvim/'
 # Startup dev tmux session
 alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 
+# Java stuff
+alias jt='mvn test'
+alias jr='mvn spring-boot:run'
+
 # Fuzzy finding navigation
 function sd {
     selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)
