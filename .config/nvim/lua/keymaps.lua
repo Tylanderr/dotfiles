@@ -26,8 +26,10 @@ vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format)
 
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+vim.keymap.set("n", "<leader>wh", "<cmd>wincmd h<CR>")
+vim.keymap.set("n", "<leader>wj", "<cmd>wincmd j<CR>")
+vim.keymap.set("n", "<leader>wk", "<cmd>wincmd k<CR>")
+vim.keymap.set("n", "<leader>wl", "<cmd>wincmd l<CR>")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
