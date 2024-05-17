@@ -124,6 +124,7 @@ return {
       --  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+      local root_pattern = require("lspconfig.util").root_pattern()
       local servers = {
         -- clangd = {},
         -- gopls = {},
@@ -136,7 +137,10 @@ return {
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
-        angularls = {},
+        angularls = {
+          root_dir = root_pattern("angular.json"),
+          filetypes = { "angular", "typescript", "html", "typescriptreact", "typescript.tsx"}
+        },
 
         lua_ls = {
           -- cmd = {...},
