@@ -26,4 +26,5 @@ require('lazy').setup({
   require 'tyler/plugins/java',
   require 'tyler/plugins/gitworktree',
   require 'tyler/plugins/dadbod',
+  require 'tyler/plugins/visual-line'
 })
