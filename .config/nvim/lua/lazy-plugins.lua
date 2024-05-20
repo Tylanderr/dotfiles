@@ -1,11 +1,9 @@
 require('lazy').setup({
-  'tpope/vim-sleuth',
+  { 'tpope/vim-sleuth' },
+  { 'numToStr/Comment.nvim',       opts = {} },
+  { 'windwp/nvim-autopairs',       opts = {} },
+  { '0xAdk/full_visual_line.nvim', keys = 'V', opts = {} },
 
-  -- Use `opts = {}` to force a plugin to be loaded.
-  --
-  --  This is equivalent to:
-  --    require('Comment').setup({})
-  { 'numToStr/Comment.nvim', opts = {} },
   require 'tyler/plugins/telescope',
   require 'tyler/plugins/lspconfig',
   require 'tyler/plugins/cmp',
@@ -26,5 +24,4 @@ require('lazy').setup({
   require 'tyler/plugins/java',
   require 'tyler/plugins/gitworktree',
   require 'tyler/plugins/dadbod',
-  require 'tyler/plugins/visual-line'
 })
