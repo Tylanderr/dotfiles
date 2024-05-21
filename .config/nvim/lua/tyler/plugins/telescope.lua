@@ -25,6 +25,12 @@ return {
             require('telescope.themes').get_dropdown(),
           },
         },
+        defaults = {
+          layout_config = {
+            prompt_position = 'top',
+          },
+          sorting_strategy = 'ascending',
+        }
       }
 
       -- Enable Telescope extensions if they are installed
@@ -47,8 +53,10 @@ return {
         builtin.grep_string { search = vim.fn.input 'Grep > ' }
       end, { desc = "Find content of files by grep" })
 
-      vim.keymap.set("n", "<Leader>wt", "<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", silent)
-      vim.keymap.set("n", "<Leader>WT", "<CMD>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>", silent)
+      vim.keymap.set("n", "<Leader>wt", "<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>",
+        silent)
+      vim.keymap.set("n", "<Leader>WT", "<CMD>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>",
+        silent)
 
 
       vim.keymap.set('n', '<leader>fc', builtin.live_grep, { desc = 'Find Content Grep Live view' })
