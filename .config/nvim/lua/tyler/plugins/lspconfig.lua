@@ -137,10 +137,10 @@ return {
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
-        angularls = {
-          root_dir = root_pattern("angular.json"),
-          filetypes = { "angular", "typescript", "html", "typescriptreact", "typescript.tsx"}
-        },
+        -- angularls = {
+        --   root_dir = root_pattern("angular.json"),
+        --   filetypes = { "angular", "typescript", "html", "typescriptreact", "typescript.tsx"}
+        -- },
 
         lua_ls = {
           -- cmd = {...},
