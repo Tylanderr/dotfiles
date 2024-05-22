@@ -46,7 +46,7 @@ return {
 
       vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Find files" })
       vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = "View help" })
-      vim.keymap.set('n', '<leader>fh', ':lua require"telescope.builtin".find_files({hidden = true})<CR>', silent)
+      vim.keymap.set('n', '<leader>fh', "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>", silent)
 
       -- possible keymaps I want to keep
       vim.keymap.set('n', '<leader>fg', function()
