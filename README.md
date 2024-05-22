@@ -8,7 +8,7 @@
 - sudo apt-get update
 - sudo apt-get upgrade
 - sudo apt-get install ca-certificates
-# Install nvm, npm and python
+# Install nvm, npm, gcc and python
 - Install nvm
     - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     - source ~/.bashrc
@@ -18,8 +18,8 @@
     - sudo ln -s $(realpath `which npm`) /usr/local/bin/npm
     - sudo ln -s `which node` /usr/local/bin/node
     - sudo ln -s `which tsc` /usr/local/bin/tsc
-- sudo apt install npm
 - sudo apt install python3
+- sudo apt install gcc
 # Download neovim tarball
 - move it to ~/.local/bin
 - extract it with "tar -xzvf nvim-linux64.tar.gz"
@@ -51,3 +51,6 @@
 - sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
 - sudo apt update
 - sudo apt install -y eza
+# Install Java
+- sudo apt install openjdk-17-jdk openjdk-17-jre
+- sudo apt install maven -y
