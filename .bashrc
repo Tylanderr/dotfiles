@@ -106,6 +106,10 @@ alias dev='sh /home/tyler/scripts/tmux-startup.sh'
 alias jt='mvn test'
 alias jr='mvn spring-boot:run'
 
+# Ansible-vault
+alias ave='ansible-vault encrypt'
+alias avd='ansible-vault decrypt'
+
 # Fuzzy finding navigation
 function sd {
     selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)
