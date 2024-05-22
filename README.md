@@ -3,7 +3,7 @@
 - Check out ansible vault
 - Possibly look into stow?
 
-# Setup neovim
+# Environment Setup
 # Remember to run
 - sudo apt-get update
 - sudo apt-get upgrade
