@@ -25,6 +25,7 @@
 - extract it with "tar -xzvf nvim-linux64.tar.gz"
 - create a symlink "ln -s ./nvim-linux64/bin/nvim ./nvim"
 # Install CLI Tools
+- sudo apt install unzip
 - sudo apt-get install ripgrep
 - sudo apt install fzf
 # Lua files
