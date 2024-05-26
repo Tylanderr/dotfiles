@@ -2,7 +2,7 @@ return {
     "tpope/vim-fugitive",
     config = function()
         vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
-        vim.keymap.set('n', '<leader>gc', ":Git commit -m ")
+        vim.keymap.set('n', '<leader>gc', ':Git commit -m ""<Left>')
 
         local Tyler_Fugitive = vim.api.nvim_create_augroup("Tyler_Fugitive", {})
 
