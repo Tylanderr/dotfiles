@@ -170,4 +170,6 @@ if [ -d "$HOME/.bashrc.d" ]; then
     done
 fi
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 eval "$(starship init bash)"
