@@ -27,7 +27,9 @@
 # Install CLI Tools
 - sudo apt install unzip
 - sudo apt-get install ripgrep
-- sudo apt install fzf
+- FZF
+    - git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    - ~/.fzf/install
 # Lua files
 - create directory ~/.config/nvim
 - Move lua files into this directory
