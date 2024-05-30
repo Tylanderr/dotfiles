@@ -100,7 +100,8 @@ alias vim='nvim'
 alias neovim='cd ~/.config/nvim/'
 
 # Startup dev tmux session
-alias dev='sh /home/tyler/scripts/tmux-startup.sh'
+alias dev='tmux new-session -s Dev -n nvim'
+alias tssh='tmux new -s ssh'
 
 # Java stuff
 alias jt='mvn test'
