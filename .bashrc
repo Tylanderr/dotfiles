@@ -113,7 +113,7 @@ alias avd='ansible-vault decrypt'
 
 # Fuzzy finding navigation
 function sd {
-    selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | sort -d | fzf)
     if  [[ $selected ]]; then
 	cd $selected
     fi
