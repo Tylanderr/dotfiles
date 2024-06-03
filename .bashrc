@@ -106,6 +106,11 @@ alias tssh='tmux new -s ssh'
 # Java stuff
 alias jt='mvn test'
 alias jr='mvn spring-boot:run'
+alias mdr='mvn dependency:resolve'
+alias mdt='mvn dependency:tree'
+alias mdp='mvn dependency:purge-local-repository'
+alias mcc='mvn clean compile'
+alias mvdu='mvn versions:display-dependency-updates'
 
 # Ansible-vault
 alias ave='ansible-vault encrypt'
