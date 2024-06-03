@@ -26,12 +26,8 @@ return {
           },
         },
         defaults = {
-          path_display = {
-            truncate = 2
-          },
           layout_config = {
             prompt_position = 'top',
-            preview_width = 0.60
           },
           sorting_strategy = 'ascending',
         },
