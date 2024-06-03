@@ -10,6 +10,7 @@ return {
 				-- overwrite default keymaps with custom functions
 				["<C-s>"] = false,
 				["<C-h>"] = false,
+				["<C-c>"] = false,
 			},
 		})
 		vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Open parent directory" })
