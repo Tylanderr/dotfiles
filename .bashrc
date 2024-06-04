@@ -104,8 +104,9 @@ alias dev='tmux new-session -s Dev -n nvim'
 alias tssh='tmux new -s ssh'
 
 # Java stuff
-alias jt='mvn test'
-alias jr='mvn spring-boot:run'
+alias mej='mvn exec:java'
+alias mjt='mvn test'
+alias msr='mvn spring-boot:run'
 alias mdr='mvn dependency:resolve'
 alias mdt='mvn dependency:tree'
 alias mdp='mvn dependency:purge-local-repository'
