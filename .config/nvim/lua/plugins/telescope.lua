@@ -26,13 +26,8 @@ return {
           },
         },
         defaults = {
-          path_display = {
-            "shorten"
-          },
           layout_config = {
-            preview_width = 0.6,
             prompt_position = 'top',
-
           },
           sorting_strategy = 'ascending',
         },
