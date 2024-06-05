@@ -26,13 +26,38 @@ return {
           },
         },
         defaults = {
-          path_display = { truncate = 2 },
+          layout_strategy = "horizontal",
           layout_config = {
             prompt_position = 'top',
-            preview_width = 0.5
+              horizontal = {
+                width = 0.90,
+                height = 0.90,
+              }
           },
           sorting_strategy = 'ascending',
+          path_display = { truncate = 2 },
         },
+        pickers = {
+          find_files = {
+            previewer = false,
+            layout_config = {
+              horizontal = {
+                width = 0.65,
+                height = 0.85,
+              }
+            }
+          },
+          grep_string = {
+            layout_config = {
+              preview_width = 0.65,
+            }
+          },
+          live_grep = {
+            layout_config = {
+              preview_width = 0.65,
+            }
+          }
+        }
       }
 
       -- Enable Telescope extensions if they are installed
