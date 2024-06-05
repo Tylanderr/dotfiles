@@ -43,5 +43,5 @@ return {
     { "rcarriga/nvim-notify", opts = { stages = "static", render = "minimal", minimum_width = 10 } },
   },
   vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" }),
-  vim.keymap.set("n", "<leader>nt", "<cmd>Noice telescope<CR>", { desc = "Show noice messages in telescope" }),
+  vim.keymap.set("n", "<leader>nl", "<cmd>NoiceHistory<CR>", { desc = "Show recent noice messages" }),
 }
