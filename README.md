@@ -27,6 +27,7 @@
 # Install CLI Tools
 - sudo apt install unzip
 - sudo apt-get install ripgrep
+- sudo apt-get install tree
 - FZF
     - git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     - ~/.fzf/install
