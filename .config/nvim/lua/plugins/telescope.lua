@@ -42,8 +42,8 @@ return {
             previewer = false,
             layout_config = {
               horizontal = {
-                width = 0.65,
-                height = 0.85,
+                width = 0.5,
+                height = 0.65,
               }
             }
           },
