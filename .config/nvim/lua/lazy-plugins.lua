@@ -1,7 +1,7 @@
 require('lazy').setup({
-  { 'tpope/vim-sleuth' },
-  { 'numToStr/Comment.nvim', opts = {} },
-  { 'windwp/nvim-autopairs', opts = {} },
+  { 'tpope/vim-sleuth',      event = "VeryLazy", },
+  { 'numToStr/Comment.nvim', event = "VeryLazy", opts = {} },
+  { 'windwp/nvim-autopairs', event = "VeryLazy", opts = {} },
 
   require 'plugins/telescope',
   require 'plugins/lspconfig',
