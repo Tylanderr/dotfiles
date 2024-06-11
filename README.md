@@ -40,7 +40,9 @@
 - Place tmux.conf in .config/tmux/
     - prefix+I to install
 # Install Starship
-- curl -sS https://starship.rs/install.sh | sh
+```
+curl -sS https://starship.rs/install.sh | sh
+```
 # Install Lazygit
 ```
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
@@ -49,14 +51,16 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 ```
 # Install EZA
-- sudo apt update
-- sudo apt install -y gpg
-- sudo mkdir -p /etc/apt/keyrings
-- wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
-- echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
-- sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
-- sudo apt update
-- sudo apt install -y eza
+```
+sudo apt update
+sudo apt install -y gpg
+sudo mkdir -p /etc/apt/keyrings
+wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
+sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
+sudo apt update
+sudo apt install -y eza
+```
 # Install Java
 - sudo apt install openjdk-17-jdk openjdk-17-jre
 - sudo apt install maven -y
