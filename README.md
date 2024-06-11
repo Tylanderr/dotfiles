@@ -10,7 +10,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install ca-certificates
 ```
-# Install nvm, npm, gcc and python
+# Install nvm, npm
 - Install nvm
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -18,35 +18,39 @@ source ~/.bashrc
 ```
 - nvm list-remote
 - nvm install version-number
-- Create symlinks to the node things that nvm installed
+- Create symlinks to the node things that nvm installed (if necessary)
 ```
 sudo ln -s $(realpath `which npm`) /usr/local/bin/npm
 sudo ln -s `which node` /usr/local/bin/node
 sudo ln -s `which tsc` /usr/local/bin/tsc
 ```
-- Python and GCC
+# Python and GCC
 ```
 sudo apt install python3
 sudo apt install gcc
 ```
 # Download neovim tarball
-- move it to ~/.local/bin
-- extract it with "tar -xzvf nvim-linux64.tar.gz"
-- create a symlink "ln -s ./nvim-linux64/bin/nvim ./nvim"
+- Move it to ~/.local/bin
+```
+tar -xzvf nvim-linux64.tar.gz
+ln -s ./nvim-linux64/bin/nvim ./nvim
+```
+# Dotfiles
+```
+git clone git@github.com:Tylander732/dotfiles.git
+mv ~/dotfiles ~/
+```
 # Install CLI Tools
 ```
 sudo apt install unzip
 sudo apt-get install ripgrep
 sudo apt-get install tree
 ```
-- FZF
+# FZF
 ```
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
-# Lua files
-- create directory ~/.config/nvim
-- Move lua files into this directory
 # Tmux
 ```
 sudo apt install tmux
