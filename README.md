@@ -24,6 +24,7 @@ sudo ln -s $(realpath `which npm`) /usr/local/bin/npm
 sudo ln -s `which node` /usr/local/bin/node
 sudo ln -s `which tsc` /usr/local/bin/tsc
 ```
+- Python and GCC
 ```
 sudo apt install python3
 sudo apt install gcc
