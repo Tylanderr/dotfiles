@@ -5,38 +5,52 @@
 
 # Environment Setup
 # Remember to run
-- sudo apt-get update
-- sudo apt-get upgrade
-- sudo apt-get install ca-certificates
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install ca-certificates
+```
 # Install nvm, npm, gcc and python
 - Install nvm
-    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    - source ~/.bashrc
-    - nvm list-remote
-    - nvm install version-number
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm list-remote
+nvm install version-number
+```
 - Create symlinks to the node things that nvm installed
-    - sudo ln -s $(realpath `which npm`) /usr/local/bin/npm
-    - sudo ln -s `which node` /usr/local/bin/node
-    - sudo ln -s `which tsc` /usr/local/bin/tsc
-- sudo apt install python3
-- sudo apt install gcc
+```
+sudo ln -s $(realpath `which npm`) /usr/local/bin/npm
+sudo ln -s `which node` /usr/local/bin/node
+sudo ln -s `which tsc` /usr/local/bin/tsc
+```
+```
+sudo apt install python3
+sudo apt install gcc
+```
 # Download neovim tarball
 - move it to ~/.local/bin
 - extract it with "tar -xzvf nvim-linux64.tar.gz"
 - create a symlink "ln -s ./nvim-linux64/bin/nvim ./nvim"
 # Install CLI Tools
-- sudo apt install unzip
-- sudo apt-get install ripgrep
-- sudo apt-get install tree
+```
+sudo apt install unzip
+sudo apt-get install ripgrep
+sudo apt-get install tree
+```
 - FZF
-    - git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    - ~/.fzf/install
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
 # Lua files
 - create directory ~/.config/nvim
 - Move lua files into this directory
 # Tmux
-- sudo apt install tmux
-- git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+sudo apt install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 - Place tmux.conf in .config/tmux/
     - prefix+I to install
 # Install Starship
@@ -62,7 +76,11 @@ sudo apt update
 sudo apt install -y eza
 ```
 # Install Java
-- sudo apt install openjdk-17-jdk openjdk-17-jre
-- sudo apt install maven -y
+```
+sudo apt install openjdk-17-jdk openjdk-17-jre
+sudo apt install maven -y
+```
 # Install Ansible
-- sudo apt install ansible -y
+```
+sudo apt install ansible -y
+```
