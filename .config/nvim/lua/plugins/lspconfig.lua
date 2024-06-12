@@ -8,7 +8,8 @@ return {
       'WhoIsSethDaniel/mason-tool-installer.nvim',
       'hrsh7th/cmp-cmdline',
 
-      { 'j-hui/fidget.nvim', opts = { notification = { window = { winblend = 0 } } } },
+      -- { 'j-hui/fidget.nvim', opts = { notification = { window = { winblend = 0 } } } },
+      {'deathbeam/lspecho.nvim', opts = { echo = true }},
 
       -- TODO: Neodev may be deprecated?
       { 'folke/neodev.nvim', opts = {} },
@@ -33,6 +34,7 @@ return {
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
           map('<leader>vd', function() vim.diagnostic.open_float() end, 'Open diagnostics float')
+          map('<leader>lspi', "<cmd>LspInfo<CR>", 'Open LspInfo')
 
           local client = vim.lsp.get_client_by_id(event.data.client_id)
           if client and client.server_capabilities.documentHighlightProvider then

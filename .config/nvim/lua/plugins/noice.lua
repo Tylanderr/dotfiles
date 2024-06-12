@@ -12,6 +12,9 @@ return {
             { find = '; before #%d+' },
             { find = '%d fewer lines' },
             { find = '%d more lines' },
+            { find = 'Publish Diagnostics' },
+            { find = 'Validate documents' },
+            { find = 'lua_ls' },
           },
         },
         opts = { skip = true },
@@ -35,11 +38,7 @@ return {
     },
   },
   dependencies = {
-    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-    "MunifTanjim/nui.nvim",
-    -- OPTIONAL:
-    --   `nvim-notify` is only needed, if you want to use the notification view.
-    --   If not available, we use `mini` as the fallback
+    { "MunifTanjim/nui.nvim" },
     { "rcarriga/nvim-notify", opts = { stages = "static", render = "minimal", minimum_width = 10 } },
   },
   vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" }),
