@@ -8,7 +8,7 @@ return {
       'WhoIsSethDaniel/mason-tool-installer.nvim',
       'hrsh7th/cmp-cmdline',
 
-      -- { 'j-hui/fidget.nvim', opts = { notification = { window = { winblend = 0 } } } },
+      { 'j-hui/fidget.nvim', opts = { notification = { window = { winblend = 0 } } } },
 
       -- TODO: Neodev may be deprecated?
       { 'folke/neodev.nvim', opts = {} },
