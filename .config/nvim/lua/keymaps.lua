@@ -1,10 +1,4 @@
-vim.keymap.set("n", "<leader>qu", vim.cmd.q)
-
 vim.keymap.set("n", "J", "mzJ`z")
-
--- This makes a weird screen tearing affect when jumping from the top of a file.
--- vim.keymap.set("n", "<C-d>", "<C-d>zz")
--- vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
@@ -21,6 +15,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
+vim.keymap.set("n", "<leader>qq", vim.cmd.q)
+vim.keymap.set("n", "<leader>QQ", "<cmd>qa!<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format)
 
