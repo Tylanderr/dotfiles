@@ -15,8 +15,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "<leader>qq", vim.cmd.q)
-vim.keymap.set("n", "<leader>QQ", "<cmd>qa!<CR>", { silent = true })
+vim.keymap.set("n", "<leader>qu", vim.cmd.q)
+vim.keymap.set("n", "<leader>QU", "<cmd>qa!<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format)
 
