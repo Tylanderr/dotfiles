@@ -59,7 +59,7 @@ return {
         },
       }
       -- NOTE: This will add parentheses onto the back of function calls when used
-      -- cmp.event:on("confirm_done", require('nvim-autopairs.completion.cmp').on_confirm_done())
+      cmp.event:on("confirm_done", require('nvim-autopairs.completion.cmp').on_confirm_done())
     end,
   },
 }
