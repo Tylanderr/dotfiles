@@ -9,6 +9,7 @@
 !.gitconfig
 !.hushlogin
 !.ssh/
+!.bashrc.d/
 
 !README.md
 !scripts/
