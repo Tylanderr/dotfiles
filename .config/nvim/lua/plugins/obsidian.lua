@@ -14,5 +14,8 @@ return {
         path = "~/vaults/obsidian-developer-vault",
       },
     },
+    ui = {
+      enable = false
+    }
   },
 }
