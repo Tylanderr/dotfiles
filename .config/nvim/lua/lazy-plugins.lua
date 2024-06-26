@@ -23,6 +23,5 @@ require('lazy').setup({
   require 'plugins/java',
   require 'plugins/gitworktree',
   require 'plugins/dadbod',
-  require 'plugins/tree',
   require 'plugins/obsidian',
 })
