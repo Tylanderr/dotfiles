@@ -9,7 +9,7 @@ return {
       'hrsh7th/cmp-cmdline',
 
       -- { 'j-hui/fidget.nvim', opts = { notification = { window = { winblend = 0 } } } },
-      -- {'deathbeam/lspecho.nvim', opts = { echo = true }},
+      {'deathbeam/lspecho.nvim', opts = { echo = true }},
 
       -- TODO: Neodev may be deprecated?
       { 'folke/neodev.nvim', opts = {} },
