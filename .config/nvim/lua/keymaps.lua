@@ -21,7 +21,8 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>qu", "<cmd>q<CR>")
 vim.keymap.set("n", "<leader>QU", "<cmd>qa!<CR>")
 
-vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>cf", "=a{")
+vim.keymap.set("n", "<leader>CF", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
