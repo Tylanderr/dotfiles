@@ -92,8 +92,9 @@ alias ll='eza -alF'
 alias ls='eza -l'
 alias cl="clear"
 alias shutdown='wsl.exe --shutdown'
-alias lg="lazygit"
 alias proj="cd ~/projects"
+alias lg="lazygit"
+alias gs="git status"
 
 # Neovim
 alias vim='nvim'
