@@ -28,6 +28,8 @@ return {
           map('gi', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
           map('qr', vim.lsp.buf.references, '[Q]uick [R]eference')
+          map('qn', '<C-w>jj<CR>', 'Quick Reference Next')
+          map('qp', '<C-w>jk<CR>', 'Quick Reference Previous')
           map('K', vim.lsp.buf.hover, 'Hover Documentation')
           map('<leader>D', require('telescope.builtin').lsp_type_definitions, 'Type [D]efinition')
           map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
@@ -35,8 +37,6 @@ return {
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
           map('<leader>vd', function() vim.diagnostic.open_float() end, 'Open diagnostics float')
-          map('<leader>qn', '<C-w>jj<CR>', 'Quick Reference Next')
-          map('<leader>qp', '<C-w>jk<CR>', 'Quick Reference Previous')
           map('<leader>lspi', "<cmd>LspInfo<CR>", 'Open LspInfo')
 
           local client = vim.lsp.get_client_by_id(event.data.client_id)
