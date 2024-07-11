@@ -12,9 +12,14 @@ return {
             { find = '; before #%d+' },
             { find = '%d fewer lines' },
             { find = '%d more lines' },
+
+            -- jdtls messages to ignore
             { find = 'Publish Diagnostics' },
             { find = 'Validate documents' },
-            { find = 'lua_ls' },
+
+            -- lua_ls messages to ignore
+            { find = 'Diagnosing -' },
+            { find = 'Processing -' },
           },
         },
         opts = { skip = true },
