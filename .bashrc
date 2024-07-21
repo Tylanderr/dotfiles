@@ -168,7 +168,8 @@ export M2_HOME=/usr/share/maven
 export PATH=${M2_HOME}/bin:${PATH}
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
-export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export PATH=$PATH:/usr/share/python3
 
 # Source config files from the bashrc config drop directory
