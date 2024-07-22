@@ -172,6 +172,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export PATH=$PATH:/usr/share/python3
 
+export EDITOR="nvim"
+
 # Source config files from the bashrc config drop directory
 if [ -d "$HOME/.bashrc.d" ]; then
     for rc in ~/.bashrc.d/*rc; do
