@@ -15,7 +15,6 @@ require('lazy').setup({
   require 'plugins/fugitive',
   require 'plugins/undotree',
   require 'plugins/refactoring',
-  require 'plugins/trouble',
   require 'plugins/noice',
   require 'plugins/lazygit',
   require 'plugins/lualine',

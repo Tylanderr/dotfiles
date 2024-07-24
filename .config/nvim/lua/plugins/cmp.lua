@@ -57,6 +57,12 @@ return {
           { name = 'luasnip' },
           { name = 'path' },
         },
+        cmp.setup.filetype({ "sql" }, {
+          sources = {
+            { name = "vim-dadbod-completion" },
+            { name = "buffer" },
+          }
+        })
       }
       -- NOTE: This will add parentheses onto the back of function calls when used
       -- cmp.event:on("confirm_done", require('nvim-autopairs.completion.cmp').on_confirm_done())
