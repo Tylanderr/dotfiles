@@ -118,6 +118,15 @@ alias mvdu='mvn versions:display-dependency-updates'
 alias ave='ansible-vault encrypt'
 alias avd='ansible-vault decrypt'
 
+# Docker
+alias dip='docker image pull'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
+alias dps='docker ps'
+alias drm='docker rm'
+alias drun='docker run'
+alias dstop='docker stop'
+
 # Fuzzy finding navigation
 function sd {
     selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | sort -d | fzf)
