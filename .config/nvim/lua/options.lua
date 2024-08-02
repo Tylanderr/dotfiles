@@ -29,7 +29,5 @@ vim.opt.isfname:append '@-@'
 
 vim.opt.updatetime = 50
 
-vim.opt.clipboard = 'unnamedplus'
-
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
