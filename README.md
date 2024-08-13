@@ -29,6 +29,10 @@ sudo ln -s `which tsc` /usr/local/bin/tsc
 sudo apt install python3
 sudo apt install gcc
 ```
+# Install Homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 # Download neovim tarball
 - Move it to ~/.local/bin
 ```
