@@ -193,3 +193,4 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 eval "$(starship init bash)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
