@@ -93,6 +93,11 @@ brew install sshs
 brew tap julien-cpsn/atac
 brew install atac
 ```
+# Install GO
+- Download tarball and move it to home
+```
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.xx.x.linux-amd64.tar.gz
+```
 # Install Java
 ```
 sudo apt install openjdk-17-jdk openjdk-17-jre
