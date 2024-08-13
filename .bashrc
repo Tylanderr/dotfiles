@@ -127,6 +127,9 @@ alias drm='docker rm'
 alias drun='docker run'
 alias dstop='docker stop'
 
+# Atac
+alias atac='atac -d ~/collections/'
+
 # Fuzzy finding navigation
 function sd {
     selected=$(find ~/projects -mindepth 1 -maxdepth 1 -type d | sort -d | fzf)
@@ -182,6 +185,7 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export PATH=$PATH:/usr/share/python3
 
 export EDITOR="nvim"
+export ATAC_KEY_BINDINGS="$HOME/.config/atac_keybindings.toml"
 
 # Source config files from the bashrc config drop directory
 if [ -d "$HOME/.bashrc.d" ]; then
