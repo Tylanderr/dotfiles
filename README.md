@@ -84,6 +84,15 @@ sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.lis
 sudo apt update
 sudo apt install -y eza
 ```
+# Install sshs
+```
+brew install sshs
+```
+# Install atac
+```
+brew tap julien-cpsn/atac
+brew install atac
+```
 # Install Java
 ```
 sudo apt install openjdk-17-jdk openjdk-17-jre
