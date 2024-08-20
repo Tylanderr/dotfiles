@@ -12,12 +12,12 @@ expand_collection = "l"
 move_request_up = "Ctrl-k"
 move_request_down = "Ctrl-j"
 
-next_environment = "Shift-E"
+next_environment = "Ctrl-E"
 display_cookies = "Shift-C"
 
 
 [keybindings.generic]
-display_help = "Shift-h" # Take care to not overlap other inputs, the help can be triggered from anywhere
+display_help = "F12" # Take care to not overlap other inputs, the help can be triggered from anywhere
 
 
 # Collection name, request name, URL, Header, Query param, Basic Auth, Bearer Token
