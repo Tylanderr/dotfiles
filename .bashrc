@@ -95,6 +95,7 @@ alias shutdown='wsl.exe --shutdown'
 alias proj="cd ~/projects"
 alias lg="lazygit"
 alias gs="git status"
+alias grpo="git remote prune origin"
 
 # Neovim
 alias vim='nvim'
