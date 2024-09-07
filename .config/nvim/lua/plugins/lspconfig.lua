@@ -2,6 +2,7 @@ return {
   {
     'neovim/nvim-lspconfig',
     event = "VeryLazy",
+    commit = "6c505d4220b521f3b0e7b645f6ce45fa914d0eed",
     dependencies = {
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
