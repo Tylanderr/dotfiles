@@ -17,6 +17,7 @@ return {
             -- jdtls messages to ignore
             { find = 'Publish Diagnostics' },
             { find = 'Validate documents' },
+            { find = 'Building -' },
 
             -- lua_ls messages to ignore
             { find = 'Diagnosing -' },
