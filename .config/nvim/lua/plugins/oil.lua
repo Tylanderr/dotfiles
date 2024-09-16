@@ -14,6 +14,8 @@ return {
 				["<C-j>"] = false,
 				["<C-k>"] = false,
 				["<C-l>"] = false,
+				["<C-c>"] = false,
+				["q"] = "actions.close",
 			},
 			float = {
 				padding = 2,
