@@ -8,11 +8,11 @@ return {
       'WhoIsSethDaniel/mason-tool-installer.nvim',
       'hrsh7th/cmp-cmdline',
 
-      -- { 'j-hui/fidget.nvim', opts = { notification = { window = { winblend = 0 } } } },
-      {'deathbeam/lspecho.nvim', opts = { echo = true }},
+      { 'deathbeam/lspecho.nvim', opts = { echo = true } },
 
       -- TODO: Neodev may be deprecated?
-      { 'folke/neodev.nvim', opts = {} },
+      -- This needs to be updated to lazydev.nvim when I migrate to nvim >= 0.10
+      { 'folke/neodev.nvim',      opts = {} },
     },
     config = function()
       vim.api.nvim_create_autocmd('LspAttach', {
@@ -64,13 +64,13 @@ return {
             sources = cmp.config.sources({
               { name = 'path' }
             }, {
-                {
-                  name = 'cmdline',
-                  option = {
-                    ignore_cmds = { 'Man', '!' }
-                  }
+              {
+                name = 'cmdline',
+                option = {
+                  ignore_cmds = { 'Man', '!' }
                 }
-              })
+              }
+            })
           })
         end,
       })
