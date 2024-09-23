@@ -45,3 +45,12 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+
+local diagnosticVisible = false
+vim.keymap.set("n", "<leader>lx", function()
+	diagnosticVisible = not diagnosticVisible
+	vim.diagnostic.config({
+		virtual_text = diagnosticVisible,
+		underline = diagnosticVisible
+	})
+end)
