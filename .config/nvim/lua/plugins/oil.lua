@@ -2,7 +2,7 @@ return {
 	"stevearc/oil.nvim",
 	config = function()
 		require("oil").setup({
-			default_file_explorer = false,
+			default_file_explorer = true,
 			skip_confirm_for_simple_edits = true,
 			view_options = {
 				show_hidden = true,
@@ -31,6 +31,7 @@ return {
 				end,
 			},
 		})
-		vim.keymap.set("n", "-", require("oil").open_float)
+		vim.keymap.set("n", "-", "<cmd>Oil<CR>")
+		vim.keymap.set("n", "<leader>-", require("oil").open_float)
 	end,
 }
