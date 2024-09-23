@@ -114,6 +114,7 @@ alias mdr='mvn dependency:resolve'
 alias mdt='mvn dependency:tree'
 alias mdp='mvn dependency:purge-local-repository'
 alias mcc='mvn clean compile'
+alias mci='mvn clean install'
 alias mvdu='mvn versions:display-dependency-updates'
 
 # Ansible-vault
