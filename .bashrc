@@ -107,7 +107,7 @@ alias dev='tmux new-session -d -s Dev -n nvim \; new-window -n cli \; select-win
 alias tssh='tmux new -s ssh'
 
 # Java stuff
-alias mej='mvn exec:java'
+alias mjr='mvn exec:java'
 alias mjt='mvn test'
 alias msr='mvn spring-boot:run'
 alias mdr='mvn dependency:resolve'
