@@ -51,6 +51,5 @@ vim.keymap.set("n", "<leader>lx", function()
 	diagnosticVisible = not diagnosticVisible
 	vim.diagnostic.config({
 		virtual_text = diagnosticVisible,
-		underline = diagnosticVisible
 	})
 end)
