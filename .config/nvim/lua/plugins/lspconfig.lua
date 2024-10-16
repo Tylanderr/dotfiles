@@ -37,6 +37,7 @@ return {
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
           map('<leader>vd', function() vim.diagnostic.open_float() end, 'Open diagnostics float')
           map('<leader>lspi', "<cmd>LspInfo<CR>", 'Open LspInfo')
+          map('<leader>lspr', "<cmd>LspRestart<CR>", 'Restart LSP')
 
           local client = vim.lsp.get_client_by_id(event.data.client_id)
           if client and client.server_capabilities.documentHighlightProvider then
