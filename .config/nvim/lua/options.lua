@@ -32,6 +32,8 @@ vim.opt.updatetime = 50
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+vim.opt.splitright = true
+
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "*",
 	callback = function()

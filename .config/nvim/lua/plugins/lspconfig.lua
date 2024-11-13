@@ -18,7 +18,6 @@ return {
       vim.api.nvim_create_autocmd('LspAttach', {
         group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
         callback = function(event)
-          -- Function for easier definition of key mappings
           local map = function(keys, func, desc)
             vim.keymap.set('n', keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
@@ -38,19 +37,6 @@ return {
           map('<leader>vd', function() vim.diagnostic.open_float() end, 'Open diagnostics float')
           map('<leader>lspi', "<cmd>LspInfo<CR>", 'Open LspInfo')
           map('<leader>lspr', "<cmd>LspRestart<CR>", 'Restart LSP')
-
-          --NOTE: turn on if you want variable hover highlighting. Also useful for finding ends of functions within lua
-          -- local client = vim.lsp.get_client_by_id(event.data.client_id)
-          -- if client and client.server_capabilities.documentHighlightProvider then
-          --   vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
-          --     buffer = event.buf,
-          --     callback = vim.lsp.buf.document_highlight,
-          --   })
-          --   vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
-          --     buffer = event.buf,
-          --     callback = vim.lsp.buf.clear_references,
-          --   })
-          -- end
 
           local cmp = require("cmp")
           cmp.setup.cmdline('/', {
