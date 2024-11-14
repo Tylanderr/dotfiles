@@ -10,7 +10,7 @@ opacity=$(awk -F '=' '/opacity/ {gsub(/ /, "", $2); print $2}' /mnt/c/Documents/
 ## Assign toggle opacity value
 case $opacity in
   1)
-    toggle_opacity=0.95
+    toggle_opacity=0.90
     ;;
   *)
 
