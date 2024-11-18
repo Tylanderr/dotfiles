@@ -20,6 +20,5 @@ require('lazy').setup({
   require 'plugins/lualine',
   require 'plugins/oil',
   require 'plugins/java',
-  require 'plugins/gitworktree',
   require 'plugins/dadbod',
 })
