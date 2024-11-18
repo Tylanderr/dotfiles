@@ -13,7 +13,7 @@ return {
             { find = '; before #%d+' },
             { find = '%d fewer lines' },
             { find = '%d more lines' },
-            { find = 'Type :qa' },
+            { find = 'Type :qa and' },
 
             -- jdtls messages to ignore
             { find = 'Publish Diagnostics' },
