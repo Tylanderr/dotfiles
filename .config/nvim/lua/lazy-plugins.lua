@@ -17,7 +17,6 @@ require('lazy').setup({
   require 'plugins/undotree',
   require 'plugins/refactoring',
   require 'plugins/noice',
-  require 'plugins/lazygit',
   require 'plugins/lualine',
   require 'plugins/oil',
   require 'plugins/java',
