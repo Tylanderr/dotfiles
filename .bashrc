@@ -152,8 +152,8 @@ function ed {
 }
 
 # Binds
-bind -x '"\C-f":"sd"'
-bind -x '"\C-g":"ed"'
+bind '"\C-f":"sd\n"'
+bind '"\C-g":"ed\n"'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
