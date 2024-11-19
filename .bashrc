@@ -130,6 +130,9 @@ alias drm='docker rm'
 alias drun='docker run'
 alias dstop='docker stop'
 
+# Envs
+alias envs='$(ListEnvs | fzf)'
+
 # Atac
 alias atac='atac -d ~/collections/'
 
@@ -147,6 +150,10 @@ function ed {
 	cd $selected
     fi
 }
+
+# Binds
+bind -x '"\C-f":"sd"'
+bind -x '"\C-g":"ed"'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
