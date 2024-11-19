@@ -151,6 +151,11 @@ function ed {
     fi
 }
 
+function spa {
+    export SPRING_PROFILES_ACTIVE="$1"
+    echo "SPRING_PROFILES_ACTIVE set to $SPRING_PROFILES_ACTIVE"
+}
+
 # Binds
 bind '"\C-f":"sd\n"'
 bind '"\C-g":"ed\n"'
