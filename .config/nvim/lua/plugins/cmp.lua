@@ -12,7 +12,7 @@ return {
           end
           return 'make install_jsregexp'
         end)(),
-        dependencies = { },
+        dependencies = {},
       },
       'saadparwaiz1/cmp_luasnip',
       'hrsh7th/cmp-nvim-lsp',
@@ -23,6 +23,12 @@ return {
       local cmp = require 'cmp'
       local luasnip = require 'luasnip'
       luasnip.config.setup {}
+
+      local cmpEnable = true
+      vim.keymap.set("n", "<leader>cmp", function()
+        cmpEnable = not cmpEnable
+        cmp.setup { enabled = cmpEnable }
+      end)
 
       cmp.setup {
         snippet = {
