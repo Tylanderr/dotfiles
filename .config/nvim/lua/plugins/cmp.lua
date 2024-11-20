@@ -24,10 +24,10 @@ return {
       local luasnip = require 'luasnip'
       luasnip.config.setup {}
 
-      local cmpEnable = true
+      -- Restart CMP if it's not behaving
       vim.keymap.set("n", "<leader>cmp", function()
-        cmpEnable = not cmpEnable
-        cmp.setup { enabled = cmpEnable }
+        cmp.setup { enabled = false }
+        cmp.setup { enabled = true }
       end)
 
       cmp.setup {
