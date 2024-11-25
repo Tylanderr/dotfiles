@@ -13,7 +13,7 @@ require('lazy').setup({
   require 'plugins/mini',
   require 'plugins/treesitter',
   require 'plugins/harpoon',
-  require 'plugins/fugitive',
+  require 'plugins/lazygit',
   require 'plugins/undotree',
   require 'plugins/refactoring',
   require 'plugins/noice',
