@@ -44,10 +44,9 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
-local diagnosticVisible = false
 vim.keymap.set("n", "<leader>lx", function()
-	diagnosticVisible = not diagnosticVisible
+	local diagnosticVisible = vim.diagnostic.config().virtual_text
 	vim.diagnostic.config({
-		virtual_text = diagnosticVisible,
+		virtual_text = not diagnosticVisible,
 	})
 end)
