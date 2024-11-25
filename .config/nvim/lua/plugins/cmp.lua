@@ -38,6 +38,27 @@ return {
         },
         completion = { completeopt = 'menu,menuone,noinsert' },
 
+        cmp.setup.cmdline('/', {
+          mapping = cmp.mapping.preset.cmdline(),
+          sources = {
+            { name = 'buffer' }
+          }
+        }),
+
+        cmp.setup.cmdline(':', {
+          mapping = cmp.mapping.preset.cmdline(),
+          sources = cmp.config.sources({
+            { name = 'path' }
+          }, {
+            {
+              name = 'cmdline',
+              option = {
+                ignore_cmds = { 'Man', '!' }
+              }
+            }
+          })
+        }),
+
         mapping = cmp.mapping.preset.insert {
           ['<C-n>'] = cmp.mapping.select_next_item(),
           ['<C-p>'] = cmp.mapping.select_prev_item(),

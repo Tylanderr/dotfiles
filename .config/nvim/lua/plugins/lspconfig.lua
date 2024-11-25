@@ -37,28 +37,6 @@ return {
           map('<leader>vd', function() vim.diagnostic.open_float() end, 'Open diagnostics float')
           map('<leader>li', "<cmd>LspInfo<CR>", 'Open LspInfo')
           map('<leader>lr', "<cmd>LspRestart<CR>", 'Restart LSP')
-
-          local cmp = require("cmp")
-          cmp.setup.cmdline('/', {
-            mapping = cmp.mapping.preset.cmdline(),
-            sources = {
-              { name = 'buffer' }
-            }
-          })
-
-          cmp.setup.cmdline(':', {
-            mapping = cmp.mapping.preset.cmdline(),
-            sources = cmp.config.sources({
-              { name = 'path' }
-            }, {
-              {
-                name = 'cmdline',
-                option = {
-                  ignore_cmds = { 'Man', '!' }
-                }
-              }
-            })
-          })
         end,
       })
 
