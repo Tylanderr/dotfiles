@@ -5,6 +5,9 @@ return {
         vim.keymap.set("n", "<leader>gs", "<cmd>vertical Git<CR>")
         vim.keymap.set("n", "<leader>gt", "<cmd>tab Git<CR>")
         vim.keymap.set('n', '<leader>gc', ':Git commit -m ""<Left>')
+
+        -- Create group of commands that only work within the fugitive buffer
+        -- This allows for two "gt" commands to be set without having a conflict
         local Tyler_Fugitive = vim.api.nvim_create_augroup("Tyler_Fugitive", {})
         local autocmd = vim.api.nvim_create_autocmd
         autocmd("BufWinEnter", {
