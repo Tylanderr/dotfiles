@@ -4,6 +4,11 @@ return {
   opts = {
     scope = {
       enabled = false
+    },
+    exclude = {
+      filetypes = {
+        "java", "go", "typescript", "javascript", "rust", "lua"
+      }
     }
   }
 }
