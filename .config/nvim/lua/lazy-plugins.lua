@@ -12,6 +12,7 @@ require('lazy').setup({
   require 'plugins/todo-comments',
   require 'plugins/mini',
   require 'plugins/treesitter',
+  require 'plugins/indent',
   require 'plugins/harpoon',
   require 'plugins/fugitive',
   require 'plugins/undotree',
