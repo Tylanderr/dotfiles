@@ -22,4 +22,5 @@ require('lazy').setup({
   require 'plugins/oil',
   require 'plugins/java',
   require 'plugins/dadbod',
+  require 'plugins/obsidian',
 })
