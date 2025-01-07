@@ -103,7 +103,6 @@ alias neovim='cd ~/.config/nvim/'
 
 # Startup dev tmux session
 alias dev='tmux new-session -s Dev -n nvim'
-# alias dev='tmux new-session -d -s Dev -n nvim \; new-window -n cli \; select-window -t 1 \; attach-session -t Dev'
 alias tssh='tmux new -s ssh'
 
 # Java stuff
