@@ -40,19 +40,6 @@ return {
         pickers = {
           find_files = { previewer = false, layout_config = { horizontal = { width = 0.5, height = 0.65, } } },
           diagnostics = { previewer = false },
-
-          -- All these pickers are setup the same. Setting preview_width within the defaults layout causes an error
-          -- to be thrown when using Code Actions
-          grep_string = { layout_config = { preview_width = 0.65, } },
-          live_grep = { layout_config = { preview_width = 0.65, } },
-          buffers = { layout_config = { preview_width = 0.65, } },
-          help_tags = { layout_config = { preview_width = 0.65, } },
-          lsp_references = { layout_config = { preview_width = 0.65, } },
-          lsp_definitions = { layout_config = { preview_width = 0.65, } },
-          lsp_implementations = { layout_config = { preview_width = 0.65, } },
-          lsp_type_definitions = { layout_config = { preview_width = 0.65, } },
-          lsp_document_symbols = { layout_config = { preview_width = 0.65, } },
-          lsp_dynamic_workspace_symbols = { layout_config = { preview_width = 0.65, } },
         }
       }
 
