@@ -96,7 +96,22 @@ brew install atac
 # Install GO
 - Download tarball and move it to home
 ```
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.xx.x.linux-amd64.tar.gz
+cd /mnt/c/Users/hardi/Downloads/
+```
+
+- Delete old installation of go
+```
+sudo rm -rf /usr/local/go 
+```
+
+- Extract tarball to home
+```
+tar -xzf go1.xx.x.linux-amd64.tar.gz
+```
+
+- Move to /usr/local/
+```
+mv go /usr/local/
 ```
 # Install Java
 ```
