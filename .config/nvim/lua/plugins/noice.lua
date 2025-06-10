@@ -22,6 +22,9 @@ return {
             -- lua_ls messages to ignore
             { find = 'Diagnosing -' },
             { find = 'Processing -' },
+
+            -- nvim deprecated messages
+            { find = 'is deprecated'},
           },
         },
         opts = { skip = true },
