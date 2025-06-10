@@ -3,7 +3,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     event = "VeryLazy",
     build = ':TSUpdate',
-    commit = "d53df0c987d2f731001f73d176090efb73d8f60f",
+    -- commit = "d53df0c987d2f731001f73d176090efb73d8f60f",
     opts = {
       ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'java' },
       auto_install = true,

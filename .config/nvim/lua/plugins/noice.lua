@@ -1,7 +1,6 @@
 return {
   "folke/noice.nvim",
   event = "VeryLazy",
-  version = "4.4.7",
   opts = {
     routes = {
       {
@@ -52,7 +51,15 @@ return {
   },
   dependencies = {
     { "MunifTanjim/nui.nvim" },
-    { "rcarriga/nvim-notify", commit = "fbef5d32be8466dd76544a257d3f3dce20082a07", opts = { stages = "static", render = "minimal", minimum_width = 10 } },
+    {
+      "rcarriga/nvim-notify",
+      -- commit = "fbef5d32be8466dd76544a257d3f3dce20082a07",
+      opts = {
+        stages = "static",
+        render = "minimal",
+        minimum_width = 10
+      }
+    },
   },
   vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" }),
   vim.keymap.set("n", "<leader>nl", "<cmd>NoiceHistory<CR>", { desc = "Show recent noice messages" }),

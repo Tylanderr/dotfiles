@@ -3,16 +3,22 @@ return {
     'neovim/nvim-lspconfig',
     event = "VeryLazy",
     dependencies = {
-      'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim',
-      'WhoIsSethDaniel/mason-tool-installer.nvim',
-      'hrsh7th/cmp-cmdline',
-
-      { 'deathbeam/lspecho.nvim', opts = { echo = true } },
-
-      -- TODO: Neodev may be deprecated?
-      -- This needs to be updated to lazydev.nvim when I migrate to nvim >= 0.10
-      { 'folke/neodev.nvim',      opts = {} },
+      { 'williamboman/mason.nvim',                  version = "^1.0.0" },
+      { 'williamboman/mason-lspconfig.nvim',        version = "^1.0.0" },
+      { 'WhoIsSethDaniel/mason-tool-installer.nvim' },
+      { 'hrsh7th/cmp-cmdline' },
+      { 'deathbeam/lspecho.nvim',                   opts = { echo = true } },
+      {
+        'folke/lazydev.nvim',
+        ft = "lua",
+        opts = {
+          library = {
+            -- Load luvit types when the `vim.uv` word is found
+            { path = "luvit-meta/library",      words = { "vim%.uv" } },
+            { path = "/usr/share/awesome/lib/", words = { "awesome" } },
+          }
+        }
+      },
     },
     config = function()
       vim.api.nvim_create_autocmd('LspAttach', {
@@ -43,42 +49,7 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
-      -- local root_pattern = require("lspconfig.util").root_pattern()
-      local servers = {
-        ts_ls = {},
-        -- angularls = {
-        --   root_dir = root_pattern("angular.json"),
-        --   filetypes = { "angular", "typescript", "html", "typescriptreact", "typescript.tsx"}
-        -- },
-
-        lua_ls = {
-          settings = {
-            Lua = {
-              completion = {
-                callSnippet = 'Replace',
-              },
-            },
-          },
-        },
-      }
-
       require('mason').setup()
-
-      local ensure_installed = vim.tbl_keys(servers or {})
-      vim.list_extend(ensure_installed, {
-        'stylua', -- Used to format Lua code
-      })
-      require('mason-tool-installer').setup { ensure_installed = ensure_installed }
-
-      require('mason-lspconfig').setup {
-        handlers = {
-          function(server_name)
-            local server = servers[server_name] or {}
-            server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-            require('lspconfig')[server_name].setup(server)
-          end,
-        },
-      }
     end,
 
     vim.diagnostic.config({
@@ -86,4 +57,15 @@ return {
       underline = false,
     }),
   },
+
+  vim.lsp.enable('angularls'),
+  vim.lsp.enable('ansiblels'),
+  vim.lsp.enable('gopls'),
+  vim.lsp.enable('html'),
+  vim.lsp.enable('lua_ls'),
+  vim.lsp.enable('nginx_language_server'),
+  vim.lsp.enable('sqls'),
+  vim.lsp.enable('templ'),
+  vim.lsp.enable('ts_ls'),
+  vim.lsp.enable('yamlls'),
 }
