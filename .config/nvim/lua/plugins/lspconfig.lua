@@ -3,11 +3,10 @@ return {
     'neovim/nvim-lspconfig',
     event = "VeryLazy",
     dependencies = {
-      { 'williamboman/mason.nvim',                  version = "^1.0.0" },
-      { 'williamboman/mason-lspconfig.nvim',        version = "^1.0.0" },
-      { 'WhoIsSethDaniel/mason-tool-installer.nvim' },
+      { 'williamboman/mason.nvim',           version = "^1.0.0" },
+      { 'williamboman/mason-lspconfig.nvim', version = "^1.0.0" },
       { 'hrsh7th/cmp-cmdline' },
-      { 'deathbeam/lspecho.nvim',                   opts = { echo = true } },
+      { 'deathbeam/lspecho.nvim',            opts = { echo = true } },
       {
         'folke/lazydev.nvim',
         ft = "lua",
@@ -60,12 +59,12 @@ return {
 
   vim.lsp.enable('angularls'),
   vim.lsp.enable('ansiblels'),
-  vim.lsp.enable('gopls'),
+  -- vim.lsp.enable('gopls'),
   vim.lsp.enable('html'),
   vim.lsp.enable('lua_ls'),
   vim.lsp.enable('nginx_language_server'),
   vim.lsp.enable('sqls'),
-  vim.lsp.enable('templ'),
+  -- vim.lsp.enable('templ'),
   vim.lsp.enable('ts_ls'),
   vim.lsp.enable('yamlls'),
 }
