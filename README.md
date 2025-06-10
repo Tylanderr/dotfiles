@@ -36,8 +36,8 @@ sudo apt install gcc
 # Download neovim tarball
 - Move it to ~/.local/bin
 ```
-tar -xzvf nvim-linux64.tar.gz
-ln -s ./nvim-linux64/bin/nvim ./nvim
+tar -xzvf nvim-linux-x86_64.tar.gz
+ln -s ./nvim-linux-x86_64/bin/nvim ./nvim
 ```
 # Dotfiles
 ```
