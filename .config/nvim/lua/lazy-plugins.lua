@@ -13,6 +13,7 @@ require('lazy').setup({
   require 'plugins/fugitive',
   require 'plugins/undotree',
   require 'plugins/refactoring',
+  require 'plugins/snacks',
   require 'plugins/noice',
   require 'plugins/lualine',
   require 'plugins/oil',

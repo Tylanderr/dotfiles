@@ -40,15 +40,14 @@ return {
 
       local servers = {
         'angularls',
-        'ansiblels',
-        'gopls',
+        -- 'ansiblels',
+        -- 'gopls',
         'html',
         'lua_ls',
-        'nginx_language_server',
-        'sqls',
-        'templ',
+        -- 'nginx_language_server',
+        -- 'templ',
         'ts_ls',
-        'yamlls',
+        -- 'yamlls',
       }
 
       for _, server in pairs(servers) do

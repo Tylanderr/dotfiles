@@ -6,9 +6,7 @@ return {
       'nvim-lua/plenary.nvim',
       {
         'nvim-telescope/telescope-fzf-native.nvim',
-
         build = 'make',
-
         cond = function()
           return vim.fn.executable 'make' == 1
         end,
@@ -54,14 +52,16 @@ return {
       vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = "View help" })
       vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = "Open buffers" })
 
-      vim.keymap.set('n', '<leader>fh', "<CMD>lua require('telescope.builtin').find_files({hidden = true, no_ignore = true})<CR>", silent)
-      vim.keymap.set("n", "<Leader>wt", "<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", silent)
-      vim.keymap.set("n", "<Leader>WT", "<CMD>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>", silent)
+      vim.keymap.set('n', '<leader>fh',
+        "<CMD>lua require('telescope.builtin').find_files({hidden = true, no_ignore = true})<CR>", silent)
+      vim.keymap.set("n", "<Leader>wt", "<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>",
+        silent)
+      vim.keymap.set("n", "<Leader>WT", "<CMD>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>",
+        silent)
 
       vim.keymap.set('n', '<leader>fg', function()
         builtin.grep_string { search = vim.fn.input 'Grep > ' }
       end, { desc = "Find content of files by grep" })
-
     end,
   },
 }
