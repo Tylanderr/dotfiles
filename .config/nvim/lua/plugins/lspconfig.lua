@@ -5,6 +5,7 @@ return {
     dependencies = {
       { 'williamboman/mason.nvim',           version = "^1.0.0" },
       { 'williamboman/mason-lspconfig.nvim', version = "^1.0.0" },
+      { 'WhoIsSethDaniel/mason-tool-installer.nvim' },
       { 'hrsh7th/cmp-cmdline' },
       { 'deathbeam/lspecho.nvim',            opts = { echo = true } },
       {
@@ -48,6 +49,23 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
+      local servers = {
+        'angularls',
+        'ansiblels',
+        'gopls',
+        'html',
+        'lua_ls',
+        'nginx_language_server',
+        'sqls',
+        'templ',
+        'ts_ls',
+        'yamlls',
+      }
+
+      for _, server in pairs(servers) do
+        vim.lsp.enable(server)
+      end
+
       require('mason').setup()
     end,
 
@@ -56,15 +74,4 @@ return {
       underline = false,
     }),
   },
-
-  vim.lsp.enable('angularls'),
-  vim.lsp.enable('ansiblels'),
-  -- vim.lsp.enable('gopls'),
-  vim.lsp.enable('html'),
-  vim.lsp.enable('lua_ls'),
-  vim.lsp.enable('nginx_language_server'),
-  vim.lsp.enable('sqls'),
-  -- vim.lsp.enable('templ'),
-  vim.lsp.enable('ts_ls'),
-  vim.lsp.enable('yamlls'),
 }
