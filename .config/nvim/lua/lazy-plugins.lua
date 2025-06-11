@@ -2,7 +2,6 @@ require('lazy').setup({
   { 'tpope/vim-sleuth',      event = "VeryLazy", },
   { 'windwp/nvim-autopairs', event = "VeryLazy", opts = {} },
 
-  require 'plugins/intro',
   require 'plugins/telescope',
   require 'plugins/lspconfig',
   require 'plugins/cmp',
