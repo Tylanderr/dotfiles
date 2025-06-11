@@ -5,20 +5,9 @@ return {
     dependencies = {
       { 'williamboman/mason.nvim',           version = "^1.0.0" },
       { 'williamboman/mason-lspconfig.nvim', version = "^1.0.0" },
-      { 'WhoIsSethDaniel/mason-tool-installer.nvim' },
-      { 'hrsh7th/cmp-cmdline' },
+      { 'folke/lazydev.nvim',                ft = "lua",            opts = {} },
       { 'deathbeam/lspecho.nvim',            opts = { echo = true } },
-      {
-        'folke/lazydev.nvim',
-        ft = "lua",
-        opts = {
-          library = {
-            -- Load luvit types when the `vim.uv` word is found
-            { path = "luvit-meta/library",      words = { "vim%.uv" } },
-            { path = "/usr/share/awesome/lib/", words = { "awesome" } },
-          }
-        }
-      },
+      { 'hrsh7th/cmp-cmdline' },
     },
     config = function()
       vim.api.nvim_create_autocmd('LspAttach', {
