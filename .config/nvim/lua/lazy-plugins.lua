@@ -13,7 +13,6 @@ require('lazy').setup({
   require 'plugins/treesitter',
   require 'plugins/harpoon',
   require 'plugins/fugitive',
-  require 'plugins/undotree',
   require 'plugins/refactoring',
   require 'plugins/lualine',
   require 'plugins/java',

@@ -8,6 +8,7 @@ return {
       { 'folke/lazydev.nvim',                ft = "lua",            opts = {} },
       { 'deathbeam/lspecho.nvim',            opts = { echo = true } },
       { 'hrsh7th/cmp-cmdline' },
+      { 'folke/snacks.nvim' },
     },
     config = function()
       vim.api.nvim_create_autocmd('LspAttach', {
@@ -17,16 +18,17 @@ return {
             vim.keymap.set('n', keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
 
-          -- map('gd', function() Snacks.picker.lsp_definitions(), '[G]oto [D]efinition')
-          -- map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
-          -- map('gi', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
-          -- map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
-          -- map('qr', vim.lsp.buf.references, '[Q]uick [R]eference')
+          map('gd', function() Snacks.picker.lsp_definitions() end, '[G]oto [D]efinition')
+          map('gr', function() Snacks.picker.lsp_references() end, '[G]oto [R]eferences')
+          map('gi', function() Snacks.picker.lsp_implementations() end, '[G]oto [I]mplementation')
+          map('gD', function() Snacks.picker.lsp_declarations() end, '[G]oto [D]eclaration')
+          map("gy", function() Snacks.picker.lsp_type_definitions() end, "Goto T[y]pe Definition")
+
+          map('qr', vim.lsp.buf.references, '[Q]uick [R]eference')
           map('qn', '<cmd>cnext<CR>', '[Q]uick Reference [N]ext')
           map('qp', '<cmd>cprev<CR>', '[Q]uick Reference [P]revious')
           map('qc', '<cmd>cclose<CR>', '[Q]uick Reference [C]lose')
           map('K', vim.lsp.buf.hover, 'Hover Documentation')
-          -- map('<leader>D', require('telescope.builtin').lsp_type_definitions, 'Type [D]efinition')
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
           map('<leader>vd', function() vim.diagnostic.open_float() end, 'Open diagnostics float')
