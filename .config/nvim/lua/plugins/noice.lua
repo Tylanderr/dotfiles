@@ -56,7 +56,6 @@ return {
     { "MunifTanjim/nui.nvim" },
     {
       "rcarriga/nvim-notify",
-      -- commit = "fbef5d32be8466dd76544a257d3f3dce20082a07",
       opts = {
         stages = "static",
         render = "minimal",

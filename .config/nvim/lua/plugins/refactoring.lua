@@ -31,14 +31,6 @@ return {
       print_var_statements = {},
       show_success_message = false,
     })
-    -- load refactoring Telescope extension
-    require("telescope").load_extension("refactoring")
-
-    vim.keymap.set(
-      { "n", "x" },
-      "<leader>rr",
-      function() require('telescope').extensions.refactoring.refactors() end
-    )
 
     -- You can also use below = true here to to change the position of the printf
     -- statement (or set two remaps for either one). This remap must be made in normal mode.
