@@ -9,16 +9,10 @@ return {
     -- refer to the configuration section below
     bigfile = { enabled = true },
     dashboard = { enabled = true },
-    explorer = { enabled = false },
-    indent = { enabled = false },
-    input = { enabled = false },
     picker = { enabled = true },
-    notifier = { enabled = false },
     quickfile = { enabled = true },
-    scope = { enabled = false },
-    scroll = { enabled = false },
-    statuscolumn = { enabled = false },
-    words = { enabled = false },
+    lazygit = { enabled = true },
+    indent = { enabled = false }
   },
   keys = {
     { "<leader>fc",       function() Snacks.picker.grep() end,        desc = "Grep" },
@@ -29,5 +23,6 @@ return {
     { "<leader>vh",       function() Snacks.picker.help() end,        desc = "Help Pages" },
     { "<leader>fk",       function() Snacks.picker.keymaps() end,     desc = "Keymaps" },
     { "<leader>u",        function() Snacks.picker.undo() end,        desc = "Undo History" },
+    { "<leader>gs",       function() Snacks.lazygit() end,            desc = "Lazygit" },
   }
 }

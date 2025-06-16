@@ -12,7 +12,6 @@ require('lazy').setup({
   require 'plugins/mini',
   require 'plugins/treesitter',
   require 'plugins/harpoon',
-  require 'plugins/fugitive',
   require 'plugins/refactoring',
   require 'plugins/lualine',
   require 'plugins/java',
