@@ -24,5 +24,6 @@ return {
     { "<leader>fk",       function() Snacks.picker.keymaps() end,     desc = "Keymaps" },
     { "<leader>u",        function() Snacks.picker.undo() end,        desc = "Undo History" },
     { "<leader>lg",       function() Snacks.lazygit() end,            desc = "Lazygit" },
+    { "<leader>gb",       function() Snacks.git.blame_line() end,     desc = "Git Blame Line" },
   }
 }
