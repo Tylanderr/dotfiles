@@ -4,6 +4,19 @@ return {
   config = function()
     require('java').setup({})
     require('lspconfig').jdtls.setup({
+      settings = {
+        java = {
+          configuration = {
+            runtimes = {
+              {
+                name = "openjdk-17",
+                path = "/usr/lib/jvm/",
+                default = true,
+              }
+            }
+          }
+        }
+      },
       java_test = {
         enable = false
       },
