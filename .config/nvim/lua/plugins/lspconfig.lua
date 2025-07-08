@@ -24,10 +24,6 @@ return {
           map('gD', function() Snacks.picker.lsp_declarations() end, '[G]oto [D]eclaration')
           map("gy", function() Snacks.picker.lsp_type_definitions() end, "Goto T[y]pe Definition")
 
-          map('qr', vim.lsp.buf.references, '[Q]uick [R]eference')
-          map('qn', '<cmd>cnext<CR>', '[Q]uick Reference [N]ext')
-          map('qp', '<cmd>cprev<CR>', '[Q]uick Reference [P]revious')
-          map('qc', '<cmd>cclose<CR>', '[Q]uick Reference [C]lose')
           map('K', vim.lsp.buf.hover, 'Hover Documentation')
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
