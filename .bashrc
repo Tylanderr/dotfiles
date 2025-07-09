@@ -88,13 +88,11 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Alias
-alias ll='eza -alF'
 alias ls='eza -l'
 alias cl="clear"
 alias shutdown='wsl.exe --shutdown'
 alias proj="cd ~/projects"
 alias lg="lazygit"
-alias gs="git status"
 alias grpo="git remote prune origin"
 
 # Neovim
@@ -116,24 +114,8 @@ alias mcc='mvn clean compile'
 alias mci='mvn clean install'
 alias mvdu='mvn versions:display-dependency-updates'
 
-# Ansible-vault
-alias ave='ansible-vault encrypt'
-alias avd='ansible-vault decrypt'
-
-# Docker
-alias dip='docker image pull'
-alias dcu='docker compose up'
-alias dcd='docker compose down'
-alias dps='docker ps'
-alias drm='docker rm'
-alias drun='docker run'
-alias dstop='docker stop'
-
 # Envs
 alias envs='$(ListEnvs | fzf)'
-
-# Atac
-alias atac='atac -d ~/collections/'
 
 # Fuzzy finding navigation
 function sd {
@@ -192,10 +174,10 @@ export NVM_DIR="$HOME/.nvm"
 
 export M2_HOME=/usr/share/maven
 export PATH=${M2_HOME}/bin:${PATH}
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 
 export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export PATH=$PATH:/usr/share/python3
 
 export EDITOR="nvim"
