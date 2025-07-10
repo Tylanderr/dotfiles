@@ -18,5 +18,4 @@ require('lazy').setup({
   require 'plugins/lualine',
   require 'plugins/java',
   require 'plugins/dadbod',
-  require 'plugins/obsidian',
 })
