@@ -12,7 +12,6 @@
 !.bashrc.d/
 
 !README.md
-!scripts/
 
 # Continue exlucding these files/directories
 .config/go/*
