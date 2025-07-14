@@ -37,13 +37,13 @@ return {
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
       local servers = {
-        'angularls',
+        -- 'angularls',
         -- 'ansiblels',
-        -- 'gopls',
-        'html',
+        'gopls',
+        -- 'html',
         'lua_ls',
         -- 'nginx_language_server',
-        -- 'templ',
+        'templ',
         'ts_ls',
         -- 'yamlls',
       }
