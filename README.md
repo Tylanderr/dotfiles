@@ -88,27 +88,19 @@ sudo apt install -y eza
 ```
 brew install sshs
 ```
-# Install atac
-```
-brew tap julien-cpsn/atac
-brew install atac
-```
 # Install GO
 - Download tarball and move it to home
 ```
 cd /mnt/c/Users/hardi/Downloads/
 ```
-
 - Delete old installation of go
 ```
 sudo rm -rf /usr/local/go 
 ```
-
 - Extract tarball to home
 ```
 tar -xzf go1.xx.x.linux-amd64.tar.gz
 ```
-
 - Move to /usr/local/
 ```
 mv go /usr/local/
