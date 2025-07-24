@@ -8,6 +8,8 @@ return {
     'typescript',
     'typescriptreact',
     'typescript.tsx',
+    'html',
+    'htmlangular'
   },
   root_markers = { 'tsconfig.json', 'jsconfig.json', 'package.json', '.git' },
   handlers = {
