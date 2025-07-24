@@ -17,5 +17,12 @@ return {
     vim.g.omni_sql_no_default_maps = 1
     vim.g.db_ui_save_location='~/connections/'
     vim.keymap.set("n", "<leader>db", "<cmd>tabnew|DBUIToggle<CR>")
+
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = "dbout",
+      callback = function()
+        vim.cmd("resize 50")
+      end
+    })
   end,
 }
