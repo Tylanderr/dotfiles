@@ -35,8 +35,6 @@ vim.keymap.set("n", "<leader>tc", "<cmd>tabclose<CR>")
 vim.keymap.set("n", "<leader>tl", "<cmd>tabnext<CR>")
 vim.keymap.set("n", "<leader>th", "<cmd>tabprev<CR>")
 
-vim.keymap.set("n", "<leader>ws", "<cmd>resize 40<CR>")
-
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
