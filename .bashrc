@@ -96,7 +96,8 @@ alias lg="lazygit"
 alias grpo="git remote prune origin"
 
 # Neovim
-alias vim='nvim .'
+alias vim='nvim'
+alias v='nvim .'
 alias neovim='cd ~/.config/nvim/'
 
 # Startup dev tmux session
