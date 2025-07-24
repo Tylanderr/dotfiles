@@ -30,11 +30,6 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>nh", "<cmd>noh<CR>")
 vim.keymap.set("n", "<leader>wv", "<cmd>vsplit<CR>")
 
-vim.keymap.set("n", "<leader>tn", "<cmd>tabnew<CR>")
-vim.keymap.set("n", "<leader>tc", "<cmd>tabclose<CR>")
-vim.keymap.set("n", "<leader>tl", "<cmd>tabnext<CR>")
-vim.keymap.set("n", "<leader>th", "<cmd>tabprev<CR>")
-
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
