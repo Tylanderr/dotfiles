@@ -176,7 +176,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export M2_HOME=/usr/share/maven
 export PATH=${M2_HOME}/bin:${PATH}
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin

@@ -9,7 +9,15 @@ return {
     -- refer to the configuration section below
     bigfile = { enabled = true },
     dashboard = { enabled = true },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      sources = {
+        files = {
+          layout = { preset = "select" },
+          hidden = true
+        },
+      },
+    },
     quickfile = { enabled = true },
     indent = { enabled = false }
   },
