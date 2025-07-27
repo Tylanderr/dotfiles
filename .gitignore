@@ -10,6 +10,7 @@
 !.hushlogin
 !.ssh/
 !.bashrc.d/
+!connections/
 
 !README.md
 
