@@ -2,8 +2,8 @@ return {
   'kristijanhusak/vim-dadbod-ui',
   lazy = true,
   dependencies = {
-    { 'tpope/vim-dadbod', lazy = true },
-    { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql' }, lazy = true }, -- Optional
+    { 'tpope/vim-dadbod' },
+    { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql' } },
   },
   cmd = {
     'DBUI',
@@ -15,7 +15,7 @@ return {
     -- Your DBUI configuration
     vim.g.db_ui_use_nerd_fonts = 1
     vim.g.omni_sql_no_default_maps = 1
-    vim.g.db_ui_save_location='~/connections/'
+    vim.g.db_ui_save_location = '~/connections/'
 
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "dbout",
@@ -25,3 +25,4 @@ return {
     })
   end,
 }
+-- vim: ts=2 sts=2 sw=2 et
