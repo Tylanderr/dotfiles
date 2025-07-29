@@ -1,24 +1,9 @@
+return {
   {
     'neovim/nvim-lspconfig',
     event = "VeryLazy",
     dependencies = {
-      {
-        'williamboman/mason.nvim',
-        version = "^1.0.0",
-        opts = {
-          ui = {
-            icons = {
-              package_installed = '✓',
-              package_pending = '➜',
-              package_uninstalled = '✗',
-            }
-          },
-          registries = {
-            'github:nvim-java/mason-registry',
-            'github:mason-org/mason-registry', 
-          }
-        }
-      },
+      { 'williamboman/mason.nvim',           version = "^1.0.0",    opts = {} },
       { 'williamboman/mason-lspconfig.nvim', version = "^1.0.0" },
       { 'folke/lazydev.nvim',                ft = "lua",            opts = {} },
       { 'deathbeam/lspecho.nvim',            opts = { echo = true } },
