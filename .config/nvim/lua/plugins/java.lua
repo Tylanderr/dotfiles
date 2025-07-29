@@ -6,15 +6,25 @@ return {
       java_test = {
         enable = true
       },
+
       java_debug_adapter = {
         enable = true,
         version = '0.58.2'
       },
+
       spring_boot_tools = {
-        enable = true
+        enable = true,
+        version = '1.55.1'
       },
+
       notifications = {
         dap = false
+      },
+
+      mason = {
+        registries = {
+          'github:nvim-java/mason-registry',
+        }
       }
     })
 
