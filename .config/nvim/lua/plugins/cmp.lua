@@ -25,7 +25,7 @@ return {
       luasnip.config.setup {}
 
       -- Restart CMP if it's not behaving
-      vim.keymap.set("n", "<leader>cmp", function()
+      vim.keymap.set("n", "<leader>cr", function()
         cmp.setup { enabled = false }
         cmp.setup { enabled = true }
       end)
