@@ -1,12 +1,15 @@
 return {
   "tpope/vim-fugitive",
   event = "VeryLazy",
+  dependencies = {
+    'sindrets/diffview.nvim',
+  },
   config = function()
     vim.keymap.set("n", "<leader>gs", "<cmd>vertical Git<CR>")
     vim.keymap.set("n", "<leader>gt", "<cmd>tab Git<CR>")
     vim.keymap.set('n', '<leader>gc', ':Git commit -m ""<Left>')
     vim.keymap.set('n', '<leader>gb', '<cmd>Git blame<CR>')
-
+    vim.keymap.set("n", "<leader>gdm", "<cmd>DiffviewOpen main..HEAD .<CR>")
 
     -- Create group of commands that only work within the fugitive buffer
     -- This allows for two "gt" commands to be set without having a conflict
