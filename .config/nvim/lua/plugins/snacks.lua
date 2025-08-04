@@ -67,6 +67,9 @@ return {
     quickfile = { enabled = true },
     indent = {
       enabled = true,
+      animate = {
+        enabled = false
+      },
       filter = function(buf)
         local exclude = {"java", "typescript", "markdown", "go", "lazy", "lua"}
         local ft = vim.bo[buf].filetype
