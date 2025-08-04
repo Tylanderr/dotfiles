@@ -49,7 +49,7 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = { enabled = false },
     picker = {
       enabled = true,
       sources = {
@@ -65,7 +65,14 @@ return {
       },
     },
     quickfile = { enabled = true },
-    indent = { enabled = false }
+    indent = {
+      enabled = true,
+      filter = function(buf)
+        local exclude = {"java", "typescript", "markdown", "go", "lazy", "lua"}
+        local ft = vim.bo[buf].filetype
+        return not vim.tbl_contains(exclude, ft)
+      end
+    }
   },
   keys = {
     { "<leader><leader>", function() Snacks.picker.buffers() end,     desc = "Buffers" },
