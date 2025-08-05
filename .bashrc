@@ -97,7 +97,6 @@ alias grpo="git remote prune origin"
 
 # Neovim
 alias vim='nvim'
-alias neovim='cd ~/.config/nvim/'
 
 # Startup dev tmux session
 alias dev='tmux new-session -s Dev -n nvim'
