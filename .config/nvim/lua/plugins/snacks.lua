@@ -71,7 +71,7 @@ return {
         enabled = false
       },
       filter = function(buf)
-        local exclude = {"java", "typescript", "markdown", "go", "lazy", "lua"}
+        local exclude = { "java", "typescript", "markdown", "go", "lazy", "lua" }
         local ft = vim.bo[buf].filetype
         return not vim.tbl_contains(exclude, ft)
       end
@@ -79,8 +79,8 @@ return {
   },
   keys = {
     { "<leader><leader>", function() Snacks.picker.buffers() end,     desc = "Buffers" },
-    { "<leader>fg",       function() Snacks.picker.grep() end,        desc = "Grep" },
-    { "<leader>ff",       function() Snacks.picker.files() end,       desc = "Find Files" },
+    { "<leader>fg",       function() Snacks.picker.grep() end,        desc = "Grep",                     nowait = true },
+    { "<leader>ff",       function() Snacks.picker.files() end,       desc = "Find Files",               nowait = true },
     { "<leader>fw",       function() Snacks.picker.grep_word() end,   desc = "Visual selection or word", mode = { "n", "x" } },
     { "<leader>fd",       function() Snacks.picker.diagnostics() end, desc = "Diagnostics" },
     { "<leader>fh",       function() Snacks.picker.help() end,        desc = "Help Pages" },
