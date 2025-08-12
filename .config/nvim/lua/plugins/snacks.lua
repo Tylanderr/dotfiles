@@ -49,7 +49,7 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = false },
+    dashboard = { enabled = true },
     picker = {
       enabled = true,
       sources = {
