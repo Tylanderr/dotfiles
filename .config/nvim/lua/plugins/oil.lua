@@ -18,6 +18,7 @@ return {
         ["<C-k>"] = false,
         ["<C-l>"] = false,
         ["<C-c>"] = false,
+        ["<C-t>"] = false,
         ["<C-q>"] = { "actions.close", nowait = true },
       },
     })
