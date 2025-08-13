@@ -25,3 +25,7 @@ gui:
       - "#db4b4b"
     defaultFgColor:
       - "#c0caf5"
+keybinding:
+  universal:
+    quit: <c-q>
+    quit-alt1: <disabled>
