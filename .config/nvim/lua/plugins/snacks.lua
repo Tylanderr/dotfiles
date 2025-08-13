@@ -75,6 +75,11 @@ return {
         local ft = vim.bo[buf].filetype
         return not vim.tbl_contains(exclude, ft)
       end
+    },
+    terminal = {
+      win = {
+        position = "float"
+      }
     }
   },
   keys = {
@@ -86,5 +91,36 @@ return {
     { "<leader>fh",       function() Snacks.picker.help() end,        desc = "Help Pages" },
     { "<leader>fk",       function() Snacks.picker.keymaps() end,     desc = "Keymaps" },
     { "<leader>u",        function() Snacks.picker.undo() end,        desc = "Undo History" },
+    {
+      "<C-t>",
+      function()
+        local current_dir = vim.fn.getcwd()
+        -- Check if we're in terminal mode
+        local in_terminal = vim.bo.buftype == "terminal"
+
+        if in_terminal then
+          -- Hide the terminal if we're in terminal mode
+          vim.cmd("hide")
+        else
+          -- Show/create terminal if we're in normal mode
+          Snacks.terminal.toggle("bash", {
+            cwd = current_dir,
+            env = {
+              TERM = "xterm-256color",
+            },
+            win = {
+              style = "terminal",
+              relative = "editor",
+              border = "rounded",
+              backdrop = false,
+              width = 0.60,
+              height = 0.60,
+            },
+          })
+        end
+      end,
+      desc = "Open Floating Terminal",
+      mode = { "n", "t" }
+    },
   }
 }
