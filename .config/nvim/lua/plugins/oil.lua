@@ -21,8 +21,21 @@ return {
         ["<C-t>"] = false,
         ["<C-q>"] = { "actions.close", nowait = true },
       },
+      float = {
+        padding = 2,
+        max_width = 110,
+        max_height = 35,
+        border = "rounded",
+        win_options = {
+          winblend = 1
+        },
+        override = function(conf)
+          return conf
+        end
+      }
     })
-    vim.keymap.set("n", "-", "<cmd>Oil<CR>")
+    vim.keymap.set("n", "-", require("oil").open_float)
+    vim.keymap.set("n", "<leader>-", "<cmd>Oil<CR>")
   end,
 }
 -- vim: ts=2 sts=2 sw=2 et
