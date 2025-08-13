@@ -18,7 +18,7 @@ return {
         ["<C-k>"] = false,
         ["<C-l>"] = false,
         ["<C-c>"] = false,
-        ["q"] = { "actions.close", nowait = true },
+        ["<C-q>"] = { "actions.close", nowait = true },
       },
     })
     vim.keymap.set("n", "-", "<cmd>Oil<CR>")
