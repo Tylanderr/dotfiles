@@ -115,8 +115,8 @@ alias mvdu='mvn versions:display-dependency-updates'
 
 # Envs
 alias envs='$(ListEnvs | fzf)'
-alias untrack='git update-index --assume-unchanged ~/.bashrc.d/envrc ~/connections/connections.json'
-alias track='git update-index --no-assume-unchanged ~/.bashrc.d/envrc ~/connections/connections.json'
+alias untrack='git update-index --assume-unchanged ~/.bashrc.d/envrc ~/.m2/settings.xml ~/connections/connections.json'
+alias track='git update-index --no-assume-unchanged ~/.bashrc.d/envrc ~/.m2/settings.xml ~/connections/connections.json'
 
 # Fuzzy finding navigation
 function sd {
@@ -127,7 +127,7 @@ function sd {
 }
 
 function ed {
-    selected=$(find * -type d | fzf)
+    selected=$(find * -type d -not \( -name node_modules -prune \) | fzf)
     if  [[ $selected ]]; then
 	cd $selected
     fi
@@ -175,7 +175,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export M2_HOME=/usr/share/maven
 export PATH=${M2_HOME}/bin:${PATH}
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
