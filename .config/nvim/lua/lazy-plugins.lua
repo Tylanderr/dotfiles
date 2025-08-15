@@ -8,7 +8,7 @@ require('lazy').setup({
   require 'plugins/tokyonight',
   require 'plugins/lspconfig',
   require 'plugins/cmp',
-  require 'plugins/fugitive',
+  -- require 'plugins/fugitive',
   require 'plugins/todo-comments',
   require 'plugins/trouble',
   require 'plugins/mini',

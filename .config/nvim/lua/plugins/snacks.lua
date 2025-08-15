@@ -91,6 +91,7 @@ return {
     { "<leader>fh",       function() Snacks.picker.help() end,        desc = "Help Pages" },
     { "<leader>fk",       function() Snacks.picker.keymaps() end,     desc = "Keymaps" },
     { "<leader>u",        function() Snacks.picker.undo() end,        desc = "Undo History" },
+    { "<leader>lg",       function() Snacks.lazygit() end,            desc = "Lazygit" },
     {
       "<C-t>",
       function()
